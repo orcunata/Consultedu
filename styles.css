@@ -86,6 +86,31 @@ h1, h2, h3 {
     color: var(--accent);
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lang-toggle {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: border-color 0.2s, color 0.2s;
+    letter-spacing: 0.03em;
+}
+
+.lang-toggle:hover {
+    border-color: var(--primary);
+    color: var(--text);
+}
+
 .nav-cta {
     background: var(--gradient);
     color: white;
@@ -805,6 +830,26 @@ h1, h2, h3 {
 
 .legal-table td em {
     color: var(--text-dim);
+}
+
+.legal-lang-label {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(79, 70, 229, 0.1);
+    border: 1px solid rgba(79, 70, 229, 0.25);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.legal-secondary {
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 1px solid var(--border);
 }
 
 /* ===== Footer Links ===== */

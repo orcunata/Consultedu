@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!email) return;
 
             const originalText = button.textContent;
-            button.textContent = 'Sending...';
+            button.textContent = currentLang === 'tr' ? 'Gonderiliyor...' : 'Sending...';
             button.disabled = true;
 
             // Collect form data
@@ -46,14 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    showToast('You\'re on the list! We\'ll notify you when we launch.');
+                    showToast(getToastMessage('toast_success'));
                     emailInput.value = '';
                 } else {
-                    showToast('Something went wrong. Please try again.');
+                    showToast(getToastMessage('toast_error'));
                 }
             } catch {
                 // If no backend is configured yet, still show success for demo
-                showToast('You\'re on the list! We\'ll notify you when we launch.');
+                showToast(getToastMessage('toast_success'));
                 emailInput.value = '';
             }
 

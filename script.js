@@ -76,6 +76,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 4000);
     }
 
+    // Cookie consent banner
+    const cookieBanner = document.getElementById('cookie-banner');
+    if (cookieBanner) {
+        const consent = localStorage.getItem('cookie_consent');
+        if (!consent) {
+            cookieBanner.classList.remove('hidden');
+        }
+
+        const acceptBtn = document.getElementById('cookie-accept');
+        const necessaryBtn = document.getElementById('cookie-necessary');
+
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookie_consent', 'all');
+                cookieBanner.classList.add('hidden');
+            });
+        }
+
+        if (necessaryBtn) {
+            necessaryBtn.addEventListener('click', () => {
+                localStorage.setItem('cookie_consent', 'necessary');
+                cookieBanner.classList.add('hidden');
+            });
+        }
+    }
+
     // Smooth reveal on scroll
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

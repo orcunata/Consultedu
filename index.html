@@ -28,6 +28,12 @@
                     <input type="email" name="email" placeholder="Enter your email address" required autocomplete="email">
                     <button type="submit">Notify Me</button>
                 </div>
+                <div class="consent-check">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="kvkk_consent" required>
+                        <span>I have read and agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and consent to the processing of my personal data in accordance with KVKK.</span>
+                    </label>
+                </div>
                 <p class="form-note">Be the first to know when we launch. No spam, ever.</p>
             </form>
             <div class="hero-stats">
@@ -258,6 +264,12 @@
                         <span class="role-label">Both</span>
                     </label>
                 </div>
+                <div class="consent-check">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="kvkk_consent" required>
+                        <span>I have read and agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-of-service.html" target="_blank">Terms of Service</a>, and consent to the processing of my personal data in accordance with KVKK.</span>
+                    </label>
+                </div>
                 <p class="form-note">No spam. Unsubscribe anytime.</p>
             </form>
         </div>
@@ -267,13 +279,29 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">Consult<span class="logo-accent">Edu</span></div>
-                <p class="footer-tagline">Making study abroad accessible for every Turkish student.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 ConsultEdu. All rights reserved.</p>
+                <p class="footer-tagline">Making study abroad accessible for every Turkish student.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <div class="cookie-content">
+            <p>We use cookies to ensure our website functions properly. By continuing to use this site, you consent to our use of cookies. See our <a href="cookie-policy.html">Cookie Policy</a> for details.</p>
+            <div class="cookie-actions">
+                <button id="cookie-accept" class="cookie-btn cookie-btn-primary">Accept All</button>
+                <button id="cookie-necessary" class="cookie-btn cookie-btn-secondary">Necessary Only</button>
+            </div>
+        </div>
+    </div>
 
     <div id="toast" class="toast hidden">
         <span id="toast-message"></span>

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!email) return;
 
             const originalText = button.textContent;
-            button.textContent = 'Sending...';
+            button.textContent = currentLang === 'tr' ? 'Gonderiliyor...' : 'Sending...';
             button.disabled = true;
 
             // Collect form data
@@ -46,14 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    showToast('You\'re on the list! We\'ll notify you when we launch.');
+                    showToast(getToastMessage('toast_success'));
                     emailInput.value = '';
                 } else {
-                    showToast('Something went wrong. Please try again.');
+                    showToast(getToastMessage('toast_error'));
                 }
             } catch {
                 // If no backend is configured yet, still show success for demo
-                showToast('You\'re on the list! We\'ll notify you when we launch.');
+                showToast(getToastMessage('toast_success'));
                 emailInput.value = '';
             }
 
@@ -74,6 +74,32 @@ document.addEventListener('DOMContentLoaded', () => {
             toast.classList.remove('show');
             setTimeout(() => toast.classList.add('hidden'), 300);
         }, 4000);
+    }
+
+    // Cookie consent banner
+    const cookieBanner = document.getElementById('cookie-banner');
+    if (cookieBanner) {
+        const consent = localStorage.getItem('cookie_consent');
+        if (!consent) {
+            cookieBanner.classList.remove('hidden');
+        }
+
+        const acceptBtn = document.getElementById('cookie-accept');
+        const necessaryBtn = document.getElementById('cookie-necessary');
+
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookie_consent', 'all');
+                cookieBanner.classList.add('hidden');
+            });
+        }
+
+        if (necessaryBtn) {
+            necessaryBtn.addEventListener('click', () => {
+                localStorage.setItem('cookie_consent', 'necessary');
+                cookieBanner.classList.add('hidden');
+            });
+        }
     }
 
     // Smooth reveal on scroll

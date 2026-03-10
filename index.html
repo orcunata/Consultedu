@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConsultEdu - Your Guide to Studying Abroad from Turkey</title>
-    <meta name="description" content="AI-powered educational consulting for Turkish students wanting to study abroad. Get personalized guidance on programs, visas, insurance, and more.">
+    <title>ConsultEdu - Yurt Disindan Egitim Rehberiniz</title>
+    <meta name="description" content="Yurt disinda okumak isteyen Turk ogrenciler icin yapay zeka destekli egitim danismanligi. Program secimi, vize, sigorta ve daha fazlasi icin kisisellestirilmis rehberlik.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,34 +14,45 @@
     <nav class="navbar">
         <div class="container nav-content">
             <div class="logo">Consult<span class="logo-accent">Edu</span></div>
-            <a href="#signup" class="nav-cta">Get Early Access</a>
+            <div class="nav-right">
+                <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+                    <span class="lang-flag">EN</span>
+                </button>
+                <a href="#signup" class="nav-cta" data-i18n="nav_cta">Erken Erisim</a>
+            </div>
         </div>
     </nav>
 
     <section class="hero">
         <div class="container">
-            <div class="hero-badge">Coming Soon</div>
-            <h1>Your AI-Powered Guide to <span class="text-gradient">Studying Abroad</span> from Turkey</h1>
-            <p class="hero-subtitle">Hyper-personalized guidance for every step of your journey — from choosing the right program to settling into your new city. Powered by AI and a community of real students who've been there.</p>
+            <div class="hero-badge" data-i18n="hero_badge">Cok Yakinda</div>
+            <h1 data-i18n="hero_title">Turkiye'den <span class="text-gradient" data-i18n="hero_title_highlight">Yurt Disina</span> Yapay Zeka Destekli Rehberiniz</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">Dogru programi secmekten yeni sehrinize yerlesmege kadar her adimda size ozel rehberlik. Yapay zeka ve gercek ogrenci deneyimleriyle desteklenmektedir.</p>
             <form id="hero-form" class="email-form" action="https://formspree.io/f/your-form-id" method="POST">
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Enter your email address" required autocomplete="email">
-                    <button type="submit">Notify Me</button>
+                    <input type="email" name="email" data-i18n-placeholder="email_placeholder" placeholder="E-posta adresinizi girin" required autocomplete="email">
+                    <button type="submit" data-i18n="notify_btn">Beni Bilgilendir</button>
                 </div>
-                <p class="form-note">Be the first to know when we launch. No spam, ever.</p>
+                <div class="consent-check">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="kvkk_consent" required>
+                        <span data-i18n-html="kvkk_consent_hero"><a href="privacy-policy.html" target="_blank">Gizlilik Politikasi</a>'ni okudum ve KVKK kapsaminda kisisel verilerimin islenmesini kabul ediyorum.</span>
+                    </label>
+                </div>
+                <p class="form-note" data-i18n="hero_form_note">Lansman aninda ilk siz haberdar olun. Spam yok, soz.</p>
             </form>
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number">50+</span>
-                    <span class="stat-label">Universities Covered</span>
+                    <span class="stat-label" data-i18n="stat_universities">Universite</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">12+</span>
-                    <span class="stat-label">Countries</span>
+                    <span class="stat-label" data-i18n="stat_countries">Ulke</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">B.Sc & M.Sc</span>
-                    <span class="stat-label">Programs</span>
+                    <span class="stat-label" data-i18n="stat_programs">Programlar</span>
                 </div>
             </div>
         </div>
@@ -49,22 +60,22 @@
 
     <section class="problem">
         <div class="container">
-            <h2>Studying abroad shouldn't feel this complicated</h2>
+            <h2 data-i18n="problem_title">Yurt disinda okumak bu kadar zor olmamali</h2>
             <div class="problem-grid">
                 <div class="problem-card">
                     <div class="problem-icon">?</div>
-                    <h3>Scattered Information</h3>
-                    <p>Hours spent on forums, outdated blog posts, and conflicting advice about applications, visas, and requirements.</p>
+                    <h3 data-i18n="problem_1_title">Dagnik Bilgi</h3>
+                    <p data-i18n="problem_1_desc">Forumlarda, eski blog yazilarinda ve celisen tavsiyelerde saatler harcamak. Basvurular, vizeler ve gereksinimler hakkinda guvenilir bilgi bulmak cok zor.</p>
                 </div>
                 <div class="problem-card">
                     <div class="problem-icon">$</div>
-                    <h3>Expensive Consultants</h3>
-                    <p>Traditional educational consultants charge thousands of liras for generic advice that doesn't fit your specific situation.</p>
+                    <h3 data-i18n="problem_2_title">Pahali Danismanlar</h3>
+                    <p data-i18n="problem_2_desc">Geleneksel egitim danismanlari, sizin ozel durumunuza uymayan genel tavsiyeler icin binlerce lira talep ediyor.</p>
                 </div>
                 <div class="problem-card">
                     <div class="problem-icon">!</div>
-                    <h3>Missed Deadlines & Steps</h3>
-                    <p>Insurance, city registration, visa renewals, blocked accounts — one missed step can derail your entire plan.</p>
+                    <h3 data-i18n="problem_3_title">Kacirilan Tarihler ve Adimlar</h3>
+                    <p data-i18n="problem_3_desc">Sigorta, sehir kaydi, vize yenileme, bloke hesap — tek bir kacirilan adim tum planinizi altust edebilir.</p>
                 </div>
             </div>
         </div>
@@ -73,37 +84,37 @@
     <section class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Everything you need, <span class="text-gradient">in one place</span></h2>
-                <p>ConsultEdu combines AI intelligence with real community experience to guide you through every step.</p>
+                <h2 data-i18n="features_title">Ihtiyaciniz olan her sey, <span class="text-gradient" data-i18n="features_title_highlight">tek bir yerde</span></h2>
+                <p data-i18n="features_subtitle">ConsultEdu, yapay zeka zekasini gercek topluluk deneyimiyle birlestirerek her adimda size rehberlik eder.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card feature-highlight">
                     <div class="feature-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 5.5-4 7.5L12 20l-3-3.5C7 14.5 5 12 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
                     </div>
-                    <h3>AI-Personalized Roadmaps</h3>
-                    <p>Tell us your dream program and get a step-by-step plan tailored to your background, budget, and timeline. From B.Sc. to M.Sc., every Studiengang covered.</p>
+                    <h3 data-i18n="feature_1_title">Yapay Zeka ile Kisisel Yol Haritasi</h3>
+                    <p data-i18n="feature_1_desc">Hayalinizdeki programi bize soyley in, gecmisinize, butcenize ve zaman cizelgenize uygun adim adim bir plan alin. Lisanstan yuksek lisansa, her Studiengang kapsanmaktadir.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
                     </div>
-                    <h3>Complete Process Guides</h3>
-                    <p>Visa applications, health insurance, blocked accounts, city registration (Anmeldung), residence permits — never miss a critical step.</p>
+                    <h3 data-i18n="feature_2_title">Eksiksiz Surec Rehberleri</h3>
+                    <p data-i18n="feature_2_desc">Vize basvurulari, saglik sigortasi, bloke hesap, sehir kaydi (Anmeldung), oturma izni — hicbir kritik adimi kacirmayin.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
-                    <h3>Community Counselors</h3>
-                    <p>Get advice from real students and graduates who've navigated the exact same path you're on. Authentic, first-hand experience.</p>
+                    <h3 data-i18n="feature_3_title">Topluluk Danismanlari</h3>
+                    <p data-i18n="feature_3_desc">Sizinle ayni yoldan gecmis gercek ogrencilerden ve mezunlardan tavsiye alin. Otantik, ilk elden deneyim.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
                     </div>
-                    <h3>University & Program Insights</h3>
-                    <p>Detailed breakdowns of programs, acceptance rates, costs of living, and what student life is really like — straight from those who lived it.</p>
+                    <h3 data-i18n="feature_4_title">Universite ve Program Bilgileri</h3>
+                    <p data-i18n="feature_4_desc">Programlarin detayli dokumu, kabul oranlari, yasam maliyetleri ve ogrenci hayatinin gercekte nasil oldugu — bizzat yasayanlardan.</p>
                 </div>
             </div>
         </div>
@@ -113,21 +124,21 @@
         <div class="container">
             <div class="counselors-layout">
                 <div class="counselors-text">
-                    <div class="section-label">For Counselors</div>
-                    <h2>Share your experience. <span class="text-gradient">Earn from it.</span></h2>
-                    <p>Already studied abroad? Your knowledge is valuable. ConsultEdu lets you turn your experience into a source of income.</p>
+                    <div class="section-label" data-i18n="counselors_label">Danismanlar Icin</div>
+                    <h2 data-i18n="counselors_title">Deneyimini paylas. <span class="text-gradient" data-i18n="counselors_title_highlight">Kazanc sagla.</span></h2>
+                    <p data-i18n="counselors_subtitle">Yurt disinda okudunuz mu? Bilginiz degerli. ConsultEdu, deneyiminizi bir gelir kaynagina donusturmenize olanak tanir.</p>
                     <ul class="counselor-benefits">
-                        <li>
-                            <strong>Earn royalties</strong> — every time a student benefits from the guidance you contributed, you earn.
+                        <li data-i18n-html="counselor_benefit_1">
+                            <strong>Telif kazanin</strong> — bir ogrenci sizin katkida bulundugunuz rehberlikten her faydalandiginda kazanc elde edersiniz.
                         </li>
-                        <li>
-                            <strong>Level up</strong> — the more you contribute, the higher your level. Higher levels mean more visibility and more earnings.
+                        <li data-i18n-html="counselor_benefit_2">
+                            <strong>Seviye atlayin</strong> — ne kadar cok katkida bulunursaniz, seviyeniz o kadar yukselir. Yuksek seviye, daha fazla gorunurluk ve daha fazla kazanc demektir.
                         </li>
-                        <li>
-                            <strong>Become certified</strong> — apply to become a Certified Local Counselor and unlock premium earning opportunities through 1-on-1 consultations.
+                        <li data-i18n-html="counselor_benefit_3">
+                            <strong>Sertifika alin</strong> — Sertifikali Yerel Danisman olmak icin basvurun ve bire bir gorusmelerle premium kazanc firsatlarinin kilidini acin.
                         </li>
-                        <li>
-                            <strong>Build your reputation</strong> — grow a profile that showcases your expertise and helps students trust your advice.
+                        <li data-i18n-html="counselor_benefit_4">
+                            <strong>Itibarinizi olusturun</strong> — uzmanliginizi sergileyen ve ogrencilerin tavsiyelerinize guvenmesini saglayan bir profil olusturun.
                         </li>
                     </ul>
                 </div>
@@ -137,33 +148,33 @@
                             <div class="level-avatar">A</div>
                             <div>
                                 <div class="level-name">Ayse K.</div>
-                                <div class="level-badge certified">Certified Counselor</div>
+                                <div class="level-badge certified" data-i18n="badge_certified">Sertifikali Danisman</div>
                             </div>
                         </div>
                         <div class="level-stats">
                             <div class="level-stat">
-                                <span class="level-stat-value">Level 8</span>
-                                <span class="level-stat-label">Counselor Level</span>
+                                <span class="level-stat-value" data-i18n="level_value">Seviye 8</span>
+                                <span class="level-stat-label" data-i18n="level_label">Danisman Seviyesi</span>
                             </div>
                             <div class="level-stat">
                                 <span class="level-stat-value">142</span>
-                                <span class="level-stat-label">Students Helped</span>
+                                <span class="level-stat-label" data-i18n="helped_label">Yardim Edilen Ogrenci</span>
                             </div>
                         </div>
                         <div class="level-bar-container">
                             <div class="level-bar" style="width: 75%"></div>
                         </div>
-                        <div class="level-bar-label">75% to Level 9</div>
+                        <div class="level-bar-label" data-i18n="level_progress">Seviye 9'a %75</div>
                     </div>
                     <div class="level-card mini">
                         <div class="level-header">
                             <div class="level-avatar accent">M</div>
                             <div>
                                 <div class="level-name">Mehmet T.</div>
-                                <div class="level-badge">Level 4 Contributor</div>
+                                <div class="level-badge" data-i18n="badge_contributor">Seviye 4 Katilimci</div>
                             </div>
                         </div>
-                        <div class="mini-stat">34 students helped &middot; 12 guides written</div>
+                        <div class="mini-stat" data-i18n="mini_stat">34 ogrenciye yardim &middot; 12 rehber yazildi</div>
                     </div>
                 </div>
             </div>
@@ -173,61 +184,61 @@
     <section class="how-it-works">
         <div class="container">
             <div class="section-header">
-                <h2>How it works</h2>
-                <p>Whether you're seeking guidance or sharing it — getting started is simple.</p>
+                <h2 data-i18n="how_title">Nasil Calisir</h2>
+                <p data-i18n="how_subtitle">Rehberlik ariyorsaniz ya da paylasmak istiyorsaniz — baslamak cok kolay.</p>
             </div>
             <div class="tabs">
-                <button class="tab active" data-tab="students">For Students</button>
-                <button class="tab" data-tab="counselors">For Counselors</button>
+                <button class="tab active" data-tab="students" data-i18n="tab_students">Ogrenciler Icin</button>
+                <button class="tab" data-tab="counselors" data-i18n="tab_counselors">Danismanlar Icin</button>
             </div>
             <div class="steps" id="tab-students">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Tell us your goals</h3>
-                    <p>Share where you want to study, what program interests you, and your current situation.</p>
+                    <h3 data-i18n="step_s1_title">Hedeflerinizi paylasinin</h3>
+                    <p data-i18n="step_s1_desc">Nerede okumak istediginizi, hangi programla ilgilendiginizi ve mevcut durumunuzu paylasinin.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Get your personalized plan</h3>
-                    <p>Our AI creates a detailed roadmap covering applications, documents, deadlines, and bureaucratic steps.</p>
+                    <h3 data-i18n="step_s2_title">Kisisel planinizi alin</h3>
+                    <p data-i18n="step_s2_desc">Yapay zekamiz basvurulari, belgeleri, son tarihleri ve burokratik adimlari kapsayan detayli bir yol haritasi olusturur.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Connect with counselors</h3>
-                    <p>Get matched with experienced students who've walked the same path and can guide you through the details.</p>
+                    <h3 data-i18n="step_s3_title">Danismanlarla baglanti kurun</h3>
+                    <p data-i18n="step_s3_desc">Ayni yoldan gecmis deneyimli ogrencilerle eslesip detaylar konusunda rehberlik alin.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Arrive prepared</h3>
-                    <p>From your first day abroad to settling in — insurance, housing, registration — we've got you covered.</p>
+                    <h3 data-i18n="step_s4_title">Hazir olarak varisin</h3>
+                    <p data-i18n="step_s4_desc">Yurt disindaki ilk gununuzden yerlesmege kadar — sigorta, konut, kayit — her sey hallolur.</p>
                 </div>
             </div>
             <div class="steps hidden" id="tab-counselors">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Create your profile</h3>
-                    <p>Share your study abroad experience — where you went, what you studied, and what you learned along the way.</p>
+                    <h3 data-i18n="step_c1_title">Profilinizi olusturun</h3>
+                    <p data-i18n="step_c1_desc">Yurt disi egitim deneyiminizi paylasinin — nereye gittiniz, ne okudugunuz ve yol boyunca neler ogrendiniz.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Contribute knowledge</h3>
-                    <p>Write guides, answer questions, and share tips. Every contribution earns you royalties and levels you up.</p>
+                    <h3 data-i18n="step_c2_title">Bilgi katkisinda bulunun</h3>
+                    <p data-i18n="step_c2_desc">Rehberler yazin, sorulari yanitlayin ve ipuclari paylasinin. Her katki size telif kazandirir ve seviyenizi yukseltir.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Grow your earnings</h3>
-                    <p>As students benefit from your advice, you earn. Higher levels mean more visibility and more income.</p>
+                    <h3 data-i18n="step_c3_title">Kazancinizi buyutun</h3>
+                    <p data-i18n="step_c3_desc">Ogrenciler tavsiyelerinizden faydalandikca siz kazanirsiniz. Yuksek seviye, daha fazla gorunurluk ve gelir demektir.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <h3>Get certified</h3>
-                    <p>Apply to become a Certified Local Counselor for premium 1-on-1 consulting opportunities.</p>
+                    <h3 data-i18n="step_c4_title">Sertifika alin</h3>
+                    <p data-i18n="step_c4_desc">Premium bire bir danismanlik firsatlari icin Sertifikali Yerel Danisman olmak uzere basvurun.</p>
                 </div>
             </div>
         </div>
@@ -235,30 +246,36 @@
 
     <section id="signup" class="cta">
         <div class="container">
-            <h2>Be the first to know when we launch</h2>
-            <p>Join the waitlist and get early access to ConsultEdu. Whether you're a student planning your journey or an experienced guide ready to earn — we want you on board.</p>
+            <h2 data-i18n="cta_title">Lansman aninda ilk siz haberdar olun</h2>
+            <p data-i18n="cta_subtitle">Bekleme listesine katilarak ConsultEdu'ya erken erisim kazanin. Yolculugunu planlayan bir ogrenci ya da kazanc elde etmeye hazir deneyimli bir rehber olun — sizi aramizda gormek istiyoruz.</p>
             <form id="cta-form" class="email-form" action="https://formspree.io/f/your-form-id" method="POST">
                 <div class="form-row">
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Enter your email address" required autocomplete="email">
-                        <button type="submit">Join the Waitlist</button>
+                        <input type="email" name="email" data-i18n-placeholder="email_placeholder" placeholder="E-posta adresinizi girin" required autocomplete="email">
+                        <button type="submit" data-i18n="waitlist_btn">Bekleme Listesine Katil</button>
                     </div>
                 </div>
                 <div class="role-select">
                     <label class="role-option">
                         <input type="radio" name="role" value="student" checked>
-                        <span class="role-label">I want to study abroad</span>
+                        <span class="role-label" data-i18n="role_student">Yurt disinda okumak istiyorum</span>
                     </label>
                     <label class="role-option">
                         <input type="radio" name="role" value="counselor">
-                        <span class="role-label">I want to be a counselor</span>
+                        <span class="role-label" data-i18n="role_counselor">Danisman olmak istiyorum</span>
                     </label>
                     <label class="role-option">
                         <input type="radio" name="role" value="both">
-                        <span class="role-label">Both</span>
+                        <span class="role-label" data-i18n="role_both">Her ikisi de</span>
                     </label>
                 </div>
-                <p class="form-note">No spam. Unsubscribe anytime.</p>
+                <div class="consent-check">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="kvkk_consent" required>
+                        <span data-i18n-html="kvkk_consent_cta"><a href="privacy-policy.html" target="_blank">Gizlilik Politikasi</a>'ni ve <a href="terms-of-service.html" target="_blank">Kullanim Kosullari</a>'ni okudum, KVKK kapsaminda kisisel verilerimin islenmesini kabul ediyorum.</span>
+                    </label>
+                </div>
+                <p class="form-note" data-i18n="cta_form_note">Spam yok. Istediginiz zaman aboneliginizi iptal edin.</p>
             </form>
         </div>
     </section>
@@ -267,18 +284,35 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">Consult<span class="logo-accent">Edu</span></div>
-                <p class="footer-tagline">Making study abroad accessible for every Turkish student.</p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html" data-i18n="footer_privacy">Gizlilik Politikasi</a>
+                    <a href="terms-of-service.html" data-i18n="footer_terms">Kullanim Kosullari</a>
+                    <a href="cookie-policy.html" data-i18n="footer_cookies">Cerez Politikasi</a>
+                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 ConsultEdu. All rights reserved.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 ConsultEdu. Tum haklari saklidir.</p>
+                <p class="footer-tagline" data-i18n="footer_tagline">Yurt disi egitimi her Turk ogrencisi icin erisilebilir kilmak.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <div class="cookie-content">
+            <p data-i18n-html="cookie_text">Web sitemizin duzgun calismasi icin cerezler kullaniyoruz. Siteyi kullanmaya devam ederek cerez kullanimini kabul etmis olursunuz. Detaylar icin <a href="cookie-policy.html">Cerez Politikasi</a>'na bakin.</p>
+            <div class="cookie-actions">
+                <button id="cookie-accept" class="cookie-btn cookie-btn-primary" data-i18n="cookie_accept">Tumunu Kabul Et</button>
+                <button id="cookie-necessary" class="cookie-btn cookie-btn-secondary" data-i18n="cookie_necessary">Sadece Gerekli</button>
+            </div>
+        </div>
+    </div>
 
     <div id="toast" class="toast hidden">
         <span id="toast-message"></span>
     </div>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

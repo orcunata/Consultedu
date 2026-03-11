@@ -1,107 +1,107 @@
 const translations = {
     tr: {
         // Nav
-        nav_cta: "Erken Erisim",
+        nav_cta: "Erken Erişim",
 
         // Hero
-        hero_badge: "Cok Yakinda",
-        hero_title: "Turkiye'den <span class='text-gradient' data-i18n='hero_title_highlight'>Yurt Disina</span> Yapay Zeka Destekli Rehberiniz",
-        hero_title_highlight: "Yurt Disina",
-        hero_subtitle: "Dogru programi secmekten yeni sehrinize yerlesmege kadar her adimda size ozel rehberlik. Yapay zeka ve gercek ogrenci deneyimleriyle desteklenmektedir.",
+        hero_badge: "Çok Yakında",
+        hero_title: "Türkiye'den <span class='text-gradient' data-i18n='hero_title_highlight'>Yurt Dışına</span> Yapay Zeka Destekli Rehberiniz",
+        hero_title_highlight: "Yurt Dışına",
+        hero_subtitle: "Doğru programı seçmekten yeni şehrinize yerleşmeye kadar her adımda size özel rehberlik. Yapay zeka ve gerçek öğrenci deneyimleriyle güçlendirilmiştir.",
         email_placeholder: "E-posta adresinizi girin",
         notify_btn: "Beni Bilgilendir",
-        kvkk_consent_hero: "<a href='privacy-policy.html' target='_blank'>Gizlilik Politikasi</a>'ni okudum ve KVKK kapsaminda kisisel verilerimin islenmesini kabul ediyorum.",
-        hero_form_note: "Lansman aninda ilk siz haberdar olun. Spam yok, soz.",
-        stat_universities: "Universite",
-        stat_countries: "Ulke",
-        stat_programs: "Programlar",
+        kvkk_consent_hero: "<a href='privacy-policy.html' target='_blank'>Gizlilik Politikası</a>'nı okudum ve KVKK kapsamında kişisel verilerimin işlenmesini kabul ediyorum.",
+        hero_form_note: "Lansman anında ilk siz haberdar olun. Spam yok, söz.",
+        stat_universities: "Üniversite",
+        stat_countries: "Ülke",
+        stat_programs: "Program",
 
         // Problem
-        problem_title: "Yurt disinda okumak bu kadar zor olmamali",
-        problem_1_title: "Dagnik Bilgi",
-        problem_1_desc: "Forumlarda, eski blog yazilarinda ve celisen tavsiyelerde saatler harcamak. Basvurular, vizeler ve gereksinimler hakkinda guvenilir bilgi bulmak cok zor.",
-        problem_2_title: "Pahali Danismanlar",
-        problem_2_desc: "Geleneksel egitim danismanlari, sizin ozel durumunuza uymayan genel tavsiyeler icin binlerce lira talep ediyor.",
-        problem_3_title: "Kacirilan Tarihler ve Adimlar",
-        problem_3_desc: "Sigorta, sehir kaydi, vize yenileme, bloke hesap — tek bir kacirilan adim tum planinizi altust edebilir.",
+        problem_title: "Yurt dışında okumak bu kadar zor olmamalı",
+        problem_1_title: "Dağınık Bilgi",
+        problem_1_desc: "Forumlarda, eski blog yazılarında ve çelişkili tavsiyelerde saatler harcıyorsunuz. Başvurular, vizeler ve gereksinimler hakkında güvenilir bilgiye ulaşmak gerçekten zor.",
+        problem_2_title: "Pahalı Danışmanlar",
+        problem_2_desc: "Geleneksel eğitim danışmanları, sizin özel durumunuza uymayan genel tavsiyeler için binlerce lira istiyor.",
+        problem_3_title: "Kaçırılan Tarihler ve Adımlar",
+        problem_3_desc: "Sigorta, şehir kaydı, vize yenilemesi, bloke hesap — tek bir atlanan adım tüm planınızı altüst edebilir.",
 
         // Features
-        features_title: "Ihtiyaciniz olan her sey, <span class='text-gradient' data-i18n='features_title_highlight'>tek bir yerde</span>",
+        features_title: "İhtiyacınız olan her şey, <span class='text-gradient' data-i18n='features_title_highlight'>tek bir yerde</span>",
         features_title_highlight: "tek bir yerde",
-        features_subtitle: "Pusula, yapay zeka zekasini gercek topluluk deneyimiyle birlestirerek her adimda size rehberlik eder.",
-        feature_1_title: "Yapay Zeka ile Kisisel Yol Haritasi",
-        feature_1_desc: "Hayalinizdeki programi bize soyleyin, gecmisinize, butcenize ve zaman cizelgenize uygun adim adim bir plan alin. Lisanstan yuksek lisansa, her Studiengang kapsanmaktadir.",
-        feature_2_title: "Eksiksiz Surec Rehberleri",
-        feature_2_desc: "Vize basvurulari, saglik sigortasi, bloke hesap, sehir kaydi (Anmeldung), oturma izni — hicbir kritik adimi kacirmayin.",
-        feature_3_title: "Topluluk Danismanlari",
-        feature_3_desc: "Sizinle ayni yoldan gecmis gercek ogrencilerden ve mezunlardan tavsiye alin. Otantik, ilk elden deneyim.",
-        feature_4_title: "Universite ve Program Bilgileri",
-        feature_4_desc: "Programlarin detayli dokumu, kabul oranlari, yasam maliyetleri ve ogrenci hayatinin gercekte nasil oldugu — bizzat yasayanlardan.",
+        features_subtitle: "Pusula, yapay zeka gücünü gerçek topluluk deneyimiyle birleştirerek her adımda yanınızda.",
+        feature_1_title: "Yapay Zeka ile Kişisel Yol Haritası",
+        feature_1_desc: "Hedeflediğiniz programı söyleyin, geçmişinize, bütçenize ve zaman çizelgenize göre adım adım bir plan çıkaralım. Lisanstan yüksek lisansa, her aşama kapsanıyor.",
+        feature_2_title: "Eksiksiz Süreç Rehberleri",
+        feature_2_desc: "Vize başvurusu, sağlık sigortası, bloke hesap, şehir kaydı (Anmeldung), oturma izni — kritik hiçbir adımı atlamamanız için.",
+        feature_3_title: "Topluluk Danışmanları",
+        feature_3_desc: "Aynı yollardan geçmiş gerçek öğrencilerden ve mezunlardan tavsiye alın. Samimi, birinci elden deneyim.",
+        feature_4_title: "Üniversite ve Program Bilgileri",
+        feature_4_desc: "Programların ayrıntılı dökümü, kabul oranları, yaşam maliyetleri ve öğrenci hayatının gerçekte nasıl olduğu — bizzat yaşayanlardan.",
 
         // Counselors
-        counselors_label: "Danismanlar Icin",
-        counselors_title: "Deneyimini paylas. <span class='text-gradient' data-i18n='counselors_title_highlight'>Kazanc sagla.</span>",
-        counselors_title_highlight: "Kazanc sagla.",
-        counselors_subtitle: "Yurt disinda okudunuz mu? Bilginiz degerli. Pusula, deneyiminizi bir gelir kaynagina donusturmenize olanak tanir.",
-        counselor_benefit_1: "<strong>Telif kazanin</strong> — bir ogrenci sizin katkida bulundugunuz rehberlikten her faydalandiginda kazanc elde edersiniz.",
-        counselor_benefit_2: "<strong>Seviye atlayin</strong> — ne kadar cok katkida bulunursaniz, seviyeniz o kadar yukselir. Yuksek seviye, daha fazla gorunurluk ve daha fazla kazanc demektir.",
-        counselor_benefit_3: "<strong>Sertifika alin</strong> — Sertifikali Yerel Danisman olmak icin basvurun ve bire bir gorusmelerle premium kazanc firsatlarinin kilidini acin.",
-        counselor_benefit_4: "<strong>Itibarinizi olusturun</strong> — uzmanliginizi sergileyen ve ogrencilerin tavsiyelerinize guvenmesini saglayan bir profil olusturun.",
-        badge_certified: "Sertifikali Danisman",
+        counselors_label: "Danışmanlar İçin",
+        counselors_title: "Deneyimini paylaş. <span class='text-gradient' data-i18n='counselors_title_highlight'>Kazanç sağla.</span>",
+        counselors_title_highlight: "Kazanç sağla.",
+        counselors_subtitle: "Yurt dışında okudunuz mu? Bilginiz değerli. Pusula, deneyiminizi bir gelir kaynağına dönüştürmenize olanak tanır.",
+        counselor_benefit_1: "<strong>Gelir elde edin</strong> — bir öğrenci katkıda bulunduğunuz rehberlikten her yararlandığında siz kazanırsınız.",
+        counselor_benefit_2: "<strong>Seviye atlayın</strong> — ne kadar çok katkıda bulunursanız, seviyeniz o kadar yükselir. Yüksek seviye, daha fazla görünürlük ve kazanç demek.",
+        counselor_benefit_3: "<strong>Sertifika alın</strong> — Sertifikalı Yerel Danışman olmak için başvurun ve birebir görüşmelerle premium kazanç fırsatlarının kapısını aralayın.",
+        counselor_benefit_4: "<strong>İtibarınızı oluşturun</strong> — uzmanlığınızı sergileyen ve öğrencilerin tavsiyelerinize güvenmesini sağlayan bir profil edinin.",
+        badge_certified: "Sertifikalı Danışman",
         level_value: "Seviye 8",
-        level_label: "Danisman Seviyesi",
-        helped_label: "Yardim Edilen Ogrenci",
+        level_label: "Danışman Seviyesi",
+        helped_label: "Yardım Edilen Öğrenci",
         level_progress: "Seviye 9'a %75",
-        badge_contributor: "Seviye 4 Katilimci",
-        mini_stat: "34 ogrenciye yardim &middot; 12 rehber yazildi",
+        badge_contributor: "Seviye 4 Katkıcı",
+        mini_stat: "34 öğrenciye yardım &middot; 12 rehber yazıldı",
 
         // How it works
-        how_title: "Nasil Calisir",
-        how_subtitle: "Rehberlik ariyorsaniz ya da paylasmak istiyorsaniz — baslamak cok kolay.",
-        tab_students: "Ogrenciler Icin",
-        tab_counselors: "Danismanlar Icin",
-        step_s1_title: "Hedeflerinizi paylasin",
-        step_s1_desc: "Nerede okumak istediginizi, hangi programla ilgilendiginizi ve mevcut durumunuzu paylasin.",
-        step_s2_title: "Kisisel planinizi alin",
-        step_s2_desc: "Yapay zekamiz basvurulari, belgeleri, son tarihleri ve burokratik adimlari kapsayan detayli bir yol haritasi olusturur.",
-        step_s3_title: "Danismanlarla baglanti kurun",
-        step_s3_desc: "Ayni yoldan gecmis deneyimli ogrencilerle eslesip detaylar konusunda rehberlik alin.",
-        step_s4_title: "Hazir olarak varisin",
-        step_s4_desc: "Yurt disindaki ilk gununuzden yerlesmeye kadar — sigorta, konut, kayit — her sey hallolur.",
-        step_c1_title: "Profilinizi olusturun",
-        step_c1_desc: "Yurt disi egitim deneyiminizi paylasin — nereye gittiniz, ne okudugunuz ve yol boyunca neler ogrendiniz.",
-        step_c2_title: "Bilgi katkisinda bulunun",
-        step_c2_desc: "Rehberler yazin, sorulari yanitlayin ve ipuclari paylasin. Her katki size telif kazandirir ve seviyenizi yukseltir.",
-        step_c3_title: "Kazancinizi buyutun",
-        step_c3_desc: "Ogrenciler tavsiyelerinizden faydalandikca siz kazanirsiniz. Yuksek seviye, daha fazla gorunurluk ve gelir demektir.",
-        step_c4_title: "Sertifika alin",
-        step_c4_desc: "Premium bire bir danismanlik firsatlari icin Sertifikali Yerel Danisman olmak uzere basvurun.",
+        how_title: "Nasıl Çalışır",
+        how_subtitle: "Rehberlik arıyor ya da paylaşmak istiyorsanız — başlamak çok kolay.",
+        tab_students: "Öğrenciler İçin",
+        tab_counselors: "Danışmanlar İçin",
+        step_s1_title: "Hedeflerinizi anlatın",
+        step_s1_desc: "Nerede okumak istediğinizi, hangi programla ilgilendiğinizi ve mevcut durumunuzu paylaşın.",
+        step_s2_title: "Kişisel planınızı alın",
+        step_s2_desc: "Yapay zekamız başvuruları, belgeleri, son tarihleri ve bürokratik adımları kapsayan ayrıntılı bir yol haritası oluşturur.",
+        step_s3_title: "Danışmanlarla bağlantı kurun",
+        step_s3_desc: "Aynı yollardan geçmiş deneyimli öğrencilerle eşleşip ayrıntılar konusunda rehberlik alın.",
+        step_s4_title: "Hazır olarak varın",
+        step_s4_desc: "Yurt dışındaki ilk gününüzden yerleşmeye kadar — sigorta, konut, kayıt — her şey hallolur.",
+        step_c1_title: "Profilinizi oluşturun",
+        step_c1_desc: "Yurt dışı eğitim deneyiminizi paylaşın — nereye gittiğinizi, ne okuduğunuzu ve yol boyunca neler öğrendiğinizi.",
+        step_c2_title: "Bilgi katkısında bulunun",
+        step_c2_desc: "Rehberler yazın, soruları yanıtlayın ve ipuçları paylaşın. Her katkı size gelir kazandırır ve seviyenizi yükseltir.",
+        step_c3_title: "Kazancınızı artırın",
+        step_c3_desc: "Öğrenciler tavsiyelerinizden yararlandıkça siz kazanırsınız. Yüksek seviye, daha fazla görünürlük ve gelir demek.",
+        step_c4_title: "Sertifika alın",
+        step_c4_desc: "Birebir danışmanlık fırsatları için Sertifikalı Yerel Danışman olmak üzere başvurun.",
 
         // CTA
-        cta_title: "Lansman aninda ilk siz haberdar olun",
-        cta_subtitle: "Bekleme listesine katilarak Pusula'ya erken erisim kazanin. Yolculugunu planlayan bir ogrenci ya da kazanc elde etmeye hazir deneyimli bir rehber olun — sizi aramizda gormek istiyoruz.",
-        waitlist_btn: "Bekleme Listesine Katil",
-        role_student: "Yurt disinda okumak istiyorum",
-        role_counselor: "Danisman olmak istiyorum",
+        cta_title: "Lansman anında ilk siz haberdar olun",
+        cta_subtitle: "Bekleme listesine katılarak Pusula'ya erken erişim kazanın. Yolculuğunu planlayan bir öğrenci ya da deneyimini paylaşmaya hazır bir rehber olun — sizi aramızda görmek istiyoruz.",
+        waitlist_btn: "Bekleme Listesine Katıl",
+        role_student: "Yurt dışında okumak istiyorum",
+        role_counselor: "Danışman olmak istiyorum",
         role_both: "Her ikisi de",
-        kvkk_consent_cta: "<a href='privacy-policy.html' target='_blank'>Gizlilik Politikasi</a>'ni ve <a href='terms-of-service.html' target='_blank'>Kullanim Kosullari</a>'ni okudum, KVKK kapsaminda kisisel verilerimin islenmesini kabul ediyorum.",
-        cta_form_note: "Spam yok. Istediginiz zaman aboneliginizi iptal edin.",
+        kvkk_consent_cta: "<a href='privacy-policy.html' target='_blank'>Gizlilik Politikası</a>'nı ve <a href='terms-of-service.html' target='_blank'>Kullanım Koşulları</a>'nı okudum, KVKK kapsamında kişisel verilerimin işlenmesini kabul ediyorum.",
+        cta_form_note: "Spam yok. İstediğinizde aboneliğinizi iptal edebilirsiniz.",
 
         // Footer
-        footer_privacy: "Gizlilik Politikasi",
-        footer_terms: "Kullanim Kosullari",
-        footer_cookies: "Cerez Politikasi",
-        footer_copyright: "&copy; 2026 Pusula. Tum haklari saklidir.",
-        footer_tagline: "Yurt disi egitimi her Turk ogrencisi icin erisilebilir kilmak.",
+        footer_privacy: "Gizlilik Politikası",
+        footer_terms: "Kullanım Koşulları",
+        footer_cookies: "Çerez Politikası",
+        footer_copyright: "&copy; 2026 Pusula. Tüm hakları saklıdır.",
+        footer_tagline: "Yurt dışı eğitimi her Türk öğrencisi için erişilebilir kılmak.",
 
         // Cookie banner
-        cookie_text: "Web sitemizin duzgun calismasi icin cerezler kullaniyoruz. Siteyi kullanmaya devam ederek cerez kullanimini kabul etmis olursunuz. Detaylar icin <a href='cookie-policy.html'>Cerez Politikasi</a>'na bakin.",
-        cookie_accept: "Tumunu Kabul Et",
-        cookie_necessary: "Sadece Gerekli",
+        cookie_text: "Web sitemizin düzgün çalışması için çerez kullanıyoruz. Siteyi kullanmaya devam ederek çerez kullanımını kabul etmiş olursunuz. Ayrıntılar için <a href='cookie-policy.html'>Çerez Politikası</a>'na bakabilirsiniz.",
+        cookie_accept: "Tümünü Kabul Et",
+        cookie_necessary: "Yalnızca Gerekli",
 
         // Toast messages
-        toast_success: "Listeye eklendiniz! Lansman oldugunda sizi bilgilendirecegiz.",
-        toast_error: "Bir seyler yanlis gitti. Lutfen tekrar deneyin."
+        toast_success: "Listeye eklendiniz! Lansmanımızda sizi bilgilendireceğiz.",
+        toast_error: "Bir şeyler ters gitti. Lütfen tekrar deneyin."
     },
     en: {
         // Nav
@@ -249,14 +249,14 @@ function setLanguage(lang) {
 
     // Update page title
     document.title = lang === 'tr'
-        ? 'Pusula - Yurt Disindan Egitim Rehberiniz'
+        ? 'Pusula - Yurt Dışından Eğitim Rehberiniz'
         : 'Pusula - Your Guide to Studying Abroad from Turkey';
 
     // Update meta description
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
         metaDesc.content = lang === 'tr'
-            ? 'Yurt disinda okumak isteyen Turk ogrenciler icin yapay zeka destekli egitim danismanligi. Program secimi, vize, sigorta ve daha fazlasi icin kisisellestirilmis rehberlik.'
+            ? 'Yurt dışında okumak isteyen Türk öğrenciler için yapay zeka destekli eğitim danışmanlığı. Program seçimi, vize, sigorta ve daha fazlası için kişiselleştirilmiş rehberlik.'
             : 'AI-powered educational consulting for Turkish students wanting to study abroad. Get personalized guidance on programs, visas, insurance, and more.';
     }
 

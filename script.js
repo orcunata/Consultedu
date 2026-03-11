@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // ===== CONFIGURATION =====
+    // Replace this with your Google Apps Script Web App URL after deploying
+    const GOOGLE_SCRIPT_URL = '';
+
     // Tab switching
     const tabs = document.querySelectorAll('.tab');
     tabs.forEach(tab => {
@@ -28,31 +32,33 @@ document.addEventListener('DOMContentLoaded', () => {
             button.textContent = currentLang === 'tr' ? 'Gonderiliyor...' : 'Sending...';
             button.disabled = true;
 
-            // Collect form data
-            const data = { email };
+            const data = {
+                email,
+                timestamp: new Date().toISOString(),
+                language: currentLang
+            };
+
             const roleInput = form.querySelector('input[name="role"]:checked');
             if (roleInput) {
                 data.role = roleInput.value;
             }
 
-            try {
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                });
-
-                if (response.ok) {
+            if (GOOGLE_SCRIPT_URL) {
+                try {
+                    await fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
                     showToast(getToastMessage('toast_success'));
                     emailInput.value = '';
-                } else {
+                } catch {
                     showToast(getToastMessage('toast_error'));
                 }
-            } catch {
-                // If no backend is configured yet, still show success for demo
+            } else {
+                // No backend configured — show success for demo purposes
+                console.warn('Pusula: No GOOGLE_SCRIPT_URL configured. Set it in script.js.');
                 showToast(getToastMessage('toast_success'));
                 emailInput.value = '';
             }

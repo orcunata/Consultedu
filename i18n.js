@@ -28,7 +28,7 @@ const translations = {
         // Features
         features_title: "Ihtiyaciniz olan her sey, <span class='text-gradient' data-i18n='features_title_highlight'>tek bir yerde</span>",
         features_title_highlight: "tek bir yerde",
-        features_subtitle: "ConsultEdu, yapay zeka zekasini gercek topluluk deneyimiyle birlestirerek her adimda size rehberlik eder.",
+        features_subtitle: "Pusula, yapay zeka zekasini gercek topluluk deneyimiyle birlestirerek her adimda size rehberlik eder.",
         feature_1_title: "Yapay Zeka ile Kisisel Yol Haritasi",
         feature_1_desc: "Hayalinizdeki programi bize soyleyin, gecmisinize, butcenize ve zaman cizelgenize uygun adim adim bir plan alin. Lisanstan yuksek lisansa, her Studiengang kapsanmaktadir.",
         feature_2_title: "Eksiksiz Surec Rehberleri",
@@ -42,7 +42,7 @@ const translations = {
         counselors_label: "Danismanlar Icin",
         counselors_title: "Deneyimini paylas. <span class='text-gradient' data-i18n='counselors_title_highlight'>Kazanc sagla.</span>",
         counselors_title_highlight: "Kazanc sagla.",
-        counselors_subtitle: "Yurt disinda okudunuz mu? Bilginiz degerli. ConsultEdu, deneyiminizi bir gelir kaynagina donusturmenize olanak tanir.",
+        counselors_subtitle: "Yurt disinda okudunuz mu? Bilginiz degerli. Pusula, deneyiminizi bir gelir kaynagina donusturmenize olanak tanir.",
         counselor_benefit_1: "<strong>Telif kazanin</strong> — bir ogrenci sizin katkida bulundugunuz rehberlikten her faydalandiginda kazanc elde edersiniz.",
         counselor_benefit_2: "<strong>Seviye atlayin</strong> — ne kadar cok katkida bulunursaniz, seviyeniz o kadar yukselir. Yuksek seviye, daha fazla gorunurluk ve daha fazla kazanc demektir.",
         counselor_benefit_3: "<strong>Sertifika alin</strong> — Sertifikali Yerel Danisman olmak icin basvurun ve bire bir gorusmelerle premium kazanc firsatlarinin kilidini acin.",
@@ -79,7 +79,7 @@ const translations = {
 
         // CTA
         cta_title: "Lansman aninda ilk siz haberdar olun",
-        cta_subtitle: "Bekleme listesine katilarak ConsultEdu'ya erken erisim kazanin. Yolculugunu planlayan bir ogrenci ya da kazanc elde etmeye hazir deneyimli bir rehber olun — sizi aramizda gormek istiyoruz.",
+        cta_subtitle: "Bekleme listesine katilarak Pusula'ya erken erisim kazanin. Yolculugunu planlayan bir ogrenci ya da kazanc elde etmeye hazir deneyimli bir rehber olun — sizi aramizda gormek istiyoruz.",
         waitlist_btn: "Bekleme Listesine Katil",
         role_student: "Yurt disinda okumak istiyorum",
         role_counselor: "Danisman olmak istiyorum",
@@ -91,7 +91,7 @@ const translations = {
         footer_privacy: "Gizlilik Politikasi",
         footer_terms: "Kullanim Kosullari",
         footer_cookies: "Cerez Politikasi",
-        footer_copyright: "&copy; 2026 ConsultEdu. Tum haklari saklidir.",
+        footer_copyright: "&copy; 2026 Pusula. Tum haklari saklidir.",
         footer_tagline: "Yurt disi egitimi her Turk ogrencisi icin erisilebilir kilmak.",
 
         // Cookie banner
@@ -132,7 +132,7 @@ const translations = {
         // Features
         features_title: "Everything you need, <span class='text-gradient' data-i18n='features_title_highlight'>in one place</span>",
         features_title_highlight: "in one place",
-        features_subtitle: "ConsultEdu combines AI intelligence with real community experience to guide you through every step.",
+        features_subtitle: "Pusula combines AI intelligence with real community experience to guide you through every step.",
         feature_1_title: "AI-Personalized Roadmaps",
         feature_1_desc: "Tell us your dream program and get a step-by-step plan tailored to your background, budget, and timeline. From B.Sc. to M.Sc., every Studiengang covered.",
         feature_2_title: "Complete Process Guides",
@@ -146,7 +146,7 @@ const translations = {
         counselors_label: "For Counselors",
         counselors_title: "Share your experience. <span class='text-gradient' data-i18n='counselors_title_highlight'>Earn from it.</span>",
         counselors_title_highlight: "Earn from it.",
-        counselors_subtitle: "Already studied abroad? Your knowledge is valuable. ConsultEdu lets you turn your experience into a source of income.",
+        counselors_subtitle: "Already studied abroad? Your knowledge is valuable. Pusula lets you turn your experience into a source of income.",
         counselor_benefit_1: "<strong>Earn royalties</strong> — every time a student benefits from the guidance you contributed, you earn.",
         counselor_benefit_2: "<strong>Level up</strong> — the more you contribute, the higher your level. Higher levels mean more visibility and more earnings.",
         counselor_benefit_3: "<strong>Become certified</strong> — apply to become a Certified Local Counselor and unlock premium earning opportunities through 1-on-1 consultations.",
@@ -183,7 +183,7 @@ const translations = {
 
         // CTA
         cta_title: "Be the first to know when we launch",
-        cta_subtitle: "Join the waitlist and get early access to ConsultEdu. Whether you're a student planning your journey or an experienced guide ready to earn — we want you on board.",
+        cta_subtitle: "Join the waitlist and get early access to Pusula. Whether you're a student planning your journey or an experienced guide ready to earn — we want you on board.",
         waitlist_btn: "Join the Waitlist",
         role_student: "I want to study abroad",
         role_counselor: "I want to be a counselor",
@@ -195,7 +195,7 @@ const translations = {
         footer_privacy: "Privacy Policy",
         footer_terms: "Terms of Service",
         footer_cookies: "Cookie Policy",
-        footer_copyright: "&copy; 2026 ConsultEdu. All rights reserved.",
+        footer_copyright: "&copy; 2026 Pusula. All rights reserved.",
         footer_tagline: "Making study abroad accessible for every Turkish student.",
 
         // Cookie banner
@@ -249,8 +249,8 @@ function setLanguage(lang) {
 
     // Update page title
     document.title = lang === 'tr'
-        ? 'ConsultEdu - Yurt Disindan Egitim Rehberiniz'
-        : 'ConsultEdu - Your Guide to Studying Abroad from Turkey';
+        ? 'Pusula - Yurt Disindan Egitim Rehberiniz'
+        : 'Pusula - Your Guide to Studying Abroad from Turkey';
 
     // Update meta description
     const metaDesc = document.querySelector('meta[name="description"]');

@@ -16,6 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Pricing tab switching
+    const pricingTabs = document.querySelectorAll('.pricing-tab');
+    pricingTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            pricingTabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            const target = tab.dataset.pricingTab;
+            document.getElementById('pricing-students').classList.toggle('hidden', target !== 'students');
+            document.getElementById('pricing-counselors').classList.toggle('hidden', target !== 'counselors');
+        });
+    });
+
     // Form submission
     const forms = document.querySelectorAll('.email-form');
     forms.forEach(form => {
@@ -118,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.feature-card, .problem-card, .step, .level-card').forEach(el => {
+    document.querySelectorAll('.feature-card, .problem-card, .step, .level-card, .pricing-card, .showcase-item').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';

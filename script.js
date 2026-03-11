@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // ===== CONFIGURATION =====
     // Replace this with your Google Apps Script Web App URL after deploying
-    const GOOGLE_SCRIPT_URL = '';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyyxoA0NJpYJ-XwzweEU2OoYa7rI7ApCKany3hBKgex3e_q1TqgpSK1ymboy-8JjnBdOA/exec';
 
     // Tab switching
     const tabs = document.querySelectorAll('.tab');

@@ -208,7 +208,31 @@ const translations = {
 
         // Toast messages
         toast_success: "Listeye eklendiniz! Lansmanımızda sizi bilgilendireceğiz.",
-        toast_error: "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+        toast_error: "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+
+        // Feature Requests
+        features_nav_link: "Özellik İstekleri",
+        features_page_title: "Özellik <span class='text-gradient' data-i18n='features_page_title_highlight'>İstekleri</span>",
+        features_page_title_highlight: "İstekleri",
+        features_page_subtitle: "Pusula'yı birlikte şekillendirelim. Yeni özellikler önerin veya mevcut önerilere oy verin.",
+        features_login_title: "Giriş Yap",
+        features_register_title: "Kayıt Ol",
+        features_email_label: "E-posta",
+        features_password_label: "Şifre",
+        features_name_label: "İsim",
+        features_login_btn: "Giriş Yap",
+        features_register_btn: "Kayıt Ol",
+        features_switch_to_register: "Hesabınız yok mu?",
+        features_switch_to_register_link: "Kayıt olun",
+        features_switch_to_login: "Zaten hesabınız var mı?",
+        features_switch_to_login_link: "Giriş yapın",
+        features_logout_btn: "Çıkış Yap",
+        features_logged_in_as: "Giriş yapan:",
+        features_submit_title: "Yeni Özellik Önerisi",
+        features_title_label: "Başlık",
+        features_desc_label: "Açıklama (isteğe bağlı)",
+        features_submit_btn: "Gönder",
+        features_no_requests: "Henüz özellik isteği yok. İlk öneriyi siz yapın!"
     },
     en: {
         // Nav
@@ -419,7 +443,31 @@ const translations = {
 
         // Toast messages
         toast_success: "You're on the list! We'll notify you when we launch.",
-        toast_error: "Something went wrong. Please try again."
+        toast_error: "Something went wrong. Please try again.",
+
+        // Feature Requests
+        features_nav_link: "Feature Requests",
+        features_page_title: "Feature <span class='text-gradient' data-i18n='features_page_title_highlight'>Requests</span>",
+        features_page_title_highlight: "Requests",
+        features_page_subtitle: "Help shape Pusula together. Suggest new features or upvote existing ones.",
+        features_login_title: "Log In",
+        features_register_title: "Sign Up",
+        features_email_label: "Email",
+        features_password_label: "Password",
+        features_name_label: "Name",
+        features_login_btn: "Log In",
+        features_register_btn: "Sign Up",
+        features_switch_to_register: "Don't have an account?",
+        features_switch_to_register_link: "Sign up",
+        features_switch_to_login: "Already have an account?",
+        features_switch_to_login_link: "Log in",
+        features_logout_btn: "Log Out",
+        features_logged_in_as: "Logged in as:",
+        features_submit_title: "New Feature Request",
+        features_title_label: "Title",
+        features_desc_label: "Description (optional)",
+        features_submit_btn: "Submit",
+        features_no_requests: "No feature requests yet. Be the first to suggest one!"
     }
 };
 

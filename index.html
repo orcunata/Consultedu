@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConsultEdu - Yurt Disindan Egitim Rehberiniz</title>
+    <title>Pusula - Yurt Disindan Egitim Rehberiniz</title>
     <meta name="description" content="Yurt disinda okumak isteyen Turk ogrenciler icin yapay zeka destekli egitim danismanligi. Program secimi, vize, sigorta ve daha fazlasi icin kisisellestirilmis rehberlik.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-content">
-            <div class="logo">Consult<span class="logo-accent">Edu</span></div>
+            <div class="logo"><span class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>Pusula</div>
             <div class="nav-right">
                 <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
                     <span class="lang-flag">EN</span>
@@ -28,7 +28,7 @@
             <div class="hero-badge" data-i18n="hero_badge">Cok Yakinda</div>
             <h1 data-i18n="hero_title">Turkiye'den <span class="text-gradient" data-i18n="hero_title_highlight">Yurt Disina</span> Yapay Zeka Destekli Rehberiniz</h1>
             <p class="hero-subtitle" data-i18n="hero_subtitle">Dogru programi secmekten yeni sehrinize yerlesmege kadar her adimda size ozel rehberlik. Yapay zeka ve gercek ogrenci deneyimleriyle desteklenmektedir.</p>
-            <form id="hero-form" class="email-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <form id="hero-form" class="email-form">
                 <div class="form-group">
                     <input type="email" name="email" data-i18n-placeholder="email_placeholder" placeholder="E-posta adresinizi girin" required autocomplete="email">
                     <button type="submit" data-i18n="notify_btn">Beni Bilgilendir</button>
@@ -63,17 +63,17 @@
             <h2 data-i18n="problem_title">Yurt disinda okumak bu kadar zor olmamali</h2>
             <div class="problem-grid">
                 <div class="problem-card">
-                    <div class="problem-icon">?</div>
+                    <div class="problem-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
                     <h3 data-i18n="problem_1_title">Dagnik Bilgi</h3>
                     <p data-i18n="problem_1_desc">Forumlarda, eski blog yazilarinda ve celisen tavsiyelerde saatler harcamak. Basvurular, vizeler ve gereksinimler hakkinda guvenilir bilgi bulmak cok zor.</p>
                 </div>
                 <div class="problem-card">
-                    <div class="problem-icon">$</div>
+                    <div class="problem-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
                     <h3 data-i18n="problem_2_title">Pahali Danismanlar</h3>
                     <p data-i18n="problem_2_desc">Geleneksel egitim danismanlari, sizin ozel durumunuza uymayan genel tavsiyeler icin binlerce lira talep ediyor.</p>
                 </div>
                 <div class="problem-card">
-                    <div class="problem-icon">!</div>
+                    <div class="problem-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
                     <h3 data-i18n="problem_3_title">Kacirilan Tarihler ve Adimlar</h3>
                     <p data-i18n="problem_3_desc">Sigorta, sehir kaydi, vize yenileme, bloke hesap — tek bir kacirilan adim tum planinizi altust edebilir.</p>
                 </div>
@@ -85,7 +85,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 data-i18n="features_title">Ihtiyaciniz olan her sey, <span class="text-gradient" data-i18n="features_title_highlight">tek bir yerde</span></h2>
-                <p data-i18n="features_subtitle">ConsultEdu, yapay zeka zekasini gercek topluluk deneyimiyle birlestirerek her adimda size rehberlik eder.</p>
+                <p data-i18n="features_subtitle">Pusula, yapay zeka zekasini gercek topluluk deneyimiyle birlestirerek her adimda size rehberlik eder.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card feature-highlight">
@@ -126,7 +126,7 @@
                 <div class="counselors-text">
                     <div class="section-label" data-i18n="counselors_label">Danismanlar Icin</div>
                     <h2 data-i18n="counselors_title">Deneyimini paylas. <span class="text-gradient" data-i18n="counselors_title_highlight">Kazanc sagla.</span></h2>
-                    <p data-i18n="counselors_subtitle">Yurt disinda okudunuz mu? Bilginiz degerli. ConsultEdu, deneyiminizi bir gelir kaynagina donusturmenize olanak tanir.</p>
+                    <p data-i18n="counselors_subtitle">Yurt disinda okudunuz mu? Bilginiz degerli. Pusula, deneyiminizi bir gelir kaynagina donusturmenize olanak tanir.</p>
                     <ul class="counselor-benefits">
                         <li data-i18n-html="counselor_benefit_1">
                             <strong>Telif kazanin</strong> — bir ogrenci sizin katkida bulundugunuz rehberlikten her faydalandiginda kazanc elde edersiniz.
@@ -247,8 +247,8 @@
     <section id="signup" class="cta">
         <div class="container">
             <h2 data-i18n="cta_title">Lansman aninda ilk siz haberdar olun</h2>
-            <p data-i18n="cta_subtitle">Bekleme listesine katilarak ConsultEdu'ya erken erisim kazanin. Yolculugunu planlayan bir ogrenci ya da kazanc elde etmeye hazir deneyimli bir rehber olun — sizi aramizda gormek istiyoruz.</p>
-            <form id="cta-form" class="email-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <p data-i18n="cta_subtitle">Bekleme listesine katilarak Pusula'ya erken erisim kazanin. Yolculugunu planlayan bir ogrenci ya da kazanc elde etmeye hazir deneyimli bir rehber olun — sizi aramizda gormek istiyoruz.</p>
+            <form id="cta-form" class="email-form">
                 <div class="form-row">
                     <div class="form-group">
                         <input type="email" name="email" data-i18n-placeholder="email_placeholder" placeholder="E-posta adresinizi girin" required autocomplete="email">
@@ -283,7 +283,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="logo">Consult<span class="logo-accent">Edu</span></div>
+                <div class="logo"><span class="logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>Pusula</div>
                 <div class="footer-links">
                     <a href="privacy-policy.html" data-i18n="footer_privacy">Gizlilik Politikasi</a>
                     <a href="terms-of-service.html" data-i18n="footer_terms">Kullanim Kosullari</a>
@@ -291,7 +291,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-i18n="footer_copyright">&copy; 2026 ConsultEdu. Tum haklari saklidir.</p>
+                <p data-i18n="footer_copyright">&copy; 2026 Pusula. Tum haklari saklidir.</p>
                 <p class="footer-tagline" data-i18n="footer_tagline">Yurt disi egitimi her Turk ogrencisi icin erisilebilir kilmak.</p>
             </div>
         </div>
